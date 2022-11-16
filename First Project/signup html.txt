@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--1st Div-->
+    <div class="signup">
+        <h1>Sign Up</h1>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="">
+            <label for="lname"> Last Name</label>
+            <input type="text" placeholder="">
+            <label for="email">Email</label>
+            <input type="email" placeholder="">
+            <label for="tel">Phone Number</label>
+            <input type="text" placeholder="">
+            <label for="gender">Gender</label>
+            <select id="sex">
+                <option value="male">Male
+                <option value="female">female
+                <option value="others">Other
+                </select>
+            <label for="pwd">Password</label>
+            <input type="password" placeholder="">
+            <label for="cpwd">Confirm Password</label>
+            <input type="password" placeholder="">
+            <input type="button" value="Sign Up">
+        </form>
+        <!--Terms and Conditions-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum id numquam aliquid vel consequuntur ad animi qui quos, placeat ratione.</p>
+        <a href="#">Terms and Conditions</a>        
+    </div>
+    <p>Already have an account? <a href="#">Login</a></p>
+</body>
+</html>

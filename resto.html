@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <header id="header" class="col-md-12">
+                <div class="d-flex align-items-center">
+                    <h1 class="logo mr-auto"><a href="#"><img src="MyPictures/logo.png" width="100px" height="100px"
+                                style="border-radius: 50%"></a>
+                    </h1>
+                    <!-- Nav menu -->
+                    <nav class="nav-menu d-none d-lg-block ps-2">
+                        <ul>
+                            <li class="active"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>My purchases</a></li>
+                            <li><a>Contact Us</a></li>
+                            <div class="custom-search ps-3">
+                                <input type="text" class="custom-search-input" placeholder="Search Here!">
+                                <button class="custom-search-botton scrollto" type="submit"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg></button>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center bg-light">
+                <p><img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        style="width: 100px; height: 100px; border-radius: 100%;"></p>
+                <h6 style="font-size: 12px">Juan Dela Cruz</h6>
+                <h6 style="font-size: 12px">Guest</h6>
+                <div class="col-md-12">
+                    <hr style="color: red">
+                </div>
+                <div class="col-md-12 pb-1">
+                    <div class="list-menu">
+                        <ul>
+                            <li class="pb-3 pe-5"><a>
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAA+pJREFUWEfdV81x00AYfZ8cMwxiBtOAZVcQ5xCFG6GDUAFxBTEVYCrAqSBOBYQKcG5EOaBUYCsN4MxEDJhYH7PSyt5drWw54ZBhb4l3P719730/S3hkix4ZHvwfgNzdcQdw3gHUAXEDQEcyHYJpCnAIJKfxZTvcVIGNGHL3oiMw+gAEiCprCkI/vvCOq2wWeyoBev5qvM+JcwKgVTWwsW9CTtK9/dYerTu/FpC7e30IYgFGXREYZ0w0Ip5PcmmElEy1FoEPAOwD8LRTTN34sjlcBWolIHcvOgHjUAlwA6beuqD5fncv6kmJXyxiEIbxhdctA1UKqMgMn9dnfDAN29N1tKu/Nzrjxp8ntRHA24v/r2DKCkh65qsS+DQOPJWp9KfnftRnptcgzrKMKYTDZzYTu34kpHqXxyQneWPzlBWQ60fjpYH5PA5awg+LlaY9pSbP090kLQQnXTPtXf86VJiaxIHXNg8WAEndP8mNN/VZ0jJlMgKXKRjGgbdTlM+ZAMg8RXgfX3gDdU8RkB/9WNQZi9apTMCHLAhdkTPv5dRnUtcGOQsEfLwNPFG3luxmRs8vPI0D72UpICnFd7khigOvUHdcfzIC6HUKx+ID3X9FucU5148ES1lJ4GRHlVZjyN2NBiAcZRtxHF96PVMP149ElqWUx4FX5kGW5woMSEBLgxvf0QEpt2fQ259B8+yBgG7iwCu0mWf+9QGBP2exdRYNQJGQS6awTmUO7J9IlmVpbg3N/CagnOpSOXRTI2Si/s+L5hcBWN5cGD69lM3Uy4tF1m9tDCjzgFZPTFXl33QVB82yOiWMXQWQ8iHD/VrqppTXhlo70GDRFXh+WDYP6dm80kPLlC4zdbGmiM5OkgkOQSRah1bsTAqrm7pC2heybnfcIWylZYBxd1NlSlxVXjQPGU3V2muevhq3anPnCJSOJWWT4xSM4byWHP/61hZFUFtqrzSLq611KFVUH6jkSCLKfuURlkFdtZ4ZY02hGxQAGWk9rc+StmiulpFkkU1AImckp2Ezes5CNhs5YpJIL2QrCwVA8pB4LcheQ6P4svlGH0n0pmpKYjZZAKn8rq8UXiCqz5KOOUlUHdAEwLymWAOZoAoXA9QY1sYsWbPXNS0T1C2WGaakMsKYrZbbShr3SkBpRdZnlywgoVf/nZyum60FQ7MnzhEhfcct15oL3fcZlKY1wTnb+nN3lYMTIO7qW9uM5MBaFh76DFo0wrRV0CAfzMokKv8/n4O5V6VormVI/Ygle9Zg43NyuF/lxZoH2ghQfkgAQ+LsM6ORPYGUXsYUEmEKJxltAuRBgDaXrPqJezFUPfzmOx8doL8jYTxD3XN0pwAAAABJRU5ErkJggg==" />
+                                    Profile
+                                </a></li>
+                            <li class="pb-3 ps-1"><a><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAZBJREFUWEfV1stRhEAQBuC/3Spd9KIRuAnIYgZmYBmBawSuGRgCRuAagWbgGoGA5VlD2BN4wbZ8QEnBQM9jETn3zHz808xAGNhDA/Pgf4Geg50g5/dbAJPWJBmhn2QXLtJWJvSDuQewK1uIFn6cnslq1VWNIH1MsYA9qgYyx7hBVUD2GHtUBRRPvVcC9m374Hu82fZVQMnUYzcY86R0QDGIwxxYjoAjZrqUpamXlBxEdOJH6V3x7kkwnoHpWpaoHCUG5bS1dxitVgXgMRhPRkwvMpC8p8QgWCUk7yk5CFiCKMyx+bCBt2MwzQkI5AnJUDog/bWVI9Q99UcgdU9VQE+BFzLj3GEUHVPVk6rdZYm/vQDxaV8oIlwdRNm87LCmhftG+XFWBqP8H+oLJUqoPI3XvX1MN36Szn7vUuc/9dqSasB8fXuS5nWOUmDEoM9CZ6gWjBbICaoDow2yQgkwRiAjlBBjDNJCaWCsQCKUJsYa1IoywDgBNaIMMc5AFZQFxilIcuJLakRXh2QiVzWDA30A7wbiJVu9jusAAAAASUVORK5CYII=" />
+                                    My Purchases</a></li>
+                            </a></li>
+                            <li class="pb-3 pe-5"><a>
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAaFJREFUWEftl91RwkAQx/97eYn4YPpwIGcFxg7oQDsROrAD7UCpgFCBIY7vlIAPCszIrXODyRwMEO6SMRkn95jcx2+/dwkNW9QwHrRARRYppaE36UdQuC56ZN9/JTBT8EdXyXxu/ncGSnudJxDfusAYZ+YeiZvL5DPJvjkBpbLTB/NzSZjNccaoly76pYCmsjMg5vvfCycsKLaFy88D6E0XuWKcNGQCMdEwTL4GtkBpeMbZmRZon/b+l4be5bn8horCZPGgpa3Vh1Lp34Hp0XRenRAVRKThBFTcTZbWUeZkMjP5uUbToeizAnqVQSB4NSZAZhfWBqT9Zc1qDCDYkS4mZmvTdNPl0DnKMn+xTXLH9ptJz9x3kskaB6Ql2JhsHQN0sSU5w6lmHSorJ2koA9BO7fFK+0tYu1Nv2dnoeWqLsl0HPZQY805RYPJniTGDa1Tp2BfStdayFsglKzfaZACcahwT5X146Z5a90PMpAtw+VXFGKQpqhkU+cMjLyo9KG7nJ86HPBt1EdRsDf+lslHa5nGbvU6Dos0DtntboCKN/QC9oE40hOptfQAAAABJRU5ErkJggg==" />
+                                    Logout</a></li>
+                        </ul>
+                        <p class="text-align: left">My Music: 
+                            <audio controls autoplay>
+                            <source src="Background/Shikisai.wav" type="audio/wav" ></audio></p>
+                    </div>
+                </div>
+            </div>
+            <div class="info col-md-6">
+                <p class="text-center">Information</p>
+                <p class="pt-5">Name: <span><input type="text" value="Juan Dela Cruz"></span></p>
+                <p class="pt-2">Username: <span class="fw-bold">Juan0123</span></p>
+                <p class="pt-2">Email: <span>Juan0123@yahoo.com </span><a href="" class="ps-1">Change email</a></p>
+                <p class="pt-2">Phone Number: <span>+639****67123 </span><a href="" class="ps-1">Change</a></p>
+                <form action="" class="pt-2"><p>Gender:
+                            <input type="radio" id="Male" name="gender" value="Male">
+                            <label for="Male" class="pe-2">Male</label>
+                            <input type="radio" id="Female" name="gender" value="Female">
+                            <label for="Female" class="pe-2">Female</label>
+                            <input type="radio" id="Others" name="gender" value="Others">
+                            <label for="Others" class="pe-2">Others</label>
+                        </p>
+                </form>
+                <p class="pt-2">Date of Birth: <span><input type="date" value="2020-01-01"></span></p>
+                <p class="pt-2 text-center"><button class="btn btn-danger btn-lg">Save</button></p>
+            </div>
+            <div class="col-md-2 bg-light">
+                <p>Ads</p>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="fw-bold">Follow Us</p>
+                    <ul class="follow">
+                        <li><a href="#"><i class='bx bxl-facebook-circle'></i>Facebook</a></li>
+                        <li><a href="#"><i class='bx bxl-instagram-alt'></i>Instagram</a></li>
+                        <li><a href="#"><i class='bx bxl-gmail'></i>Gmail</a></li>
+                        <li><a href="#"><i class='bx bxl-github'></i>Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
